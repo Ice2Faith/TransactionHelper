@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="标题"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            tools:text="标题" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="内容"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxHeight="120dp"
+            android:layout_weight="3"
+            tools:text="内容"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+</LinearLayout>
